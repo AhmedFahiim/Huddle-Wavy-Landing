@@ -45,6 +45,11 @@ header .container a:last-child {
   border: 1px solid hsl(322, 100%, 66%);
   border-radius: 99px;
   color: hsl(322, 100%, 66%);
+  transition: 0.3s;
+}
+header .container a:last-child:hover {
+  color: #fff;
+  background-color: hsl(322, 100%, 66%);
 }
 /* end header */
 /* start landing */
@@ -75,7 +80,15 @@ header .container a:last-child {
   background-color: hsl(322, 100%, 66%);
   border-radius: 99px;
   color: white;
+  border: 1px solid transparent;
+  transition: 0.3s;
 }
+.landing .container .text a:hover {
+  color: hsl(322, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
+  background-color: #fff;
+}
+
 .landing .container img {
   max-width: 100%;
   width: 80%;
@@ -185,8 +198,16 @@ main .features .container article img {
   padding: 15px;
   background-color: hsl(322, 100%, 66%);
   color: white;
+  border: 1px solid transparent;
   border-radius: 99px;
+  transition: 0.3s;
 }
+.ready a:hover {
+  color: hsl(322, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
+  background-color: #fff;
+}
+
 /* end ready */
 /* start footer */
 footer {
@@ -275,6 +296,10 @@ footer .container .col:last-child .form [type="button"] {
   color: white;
   margin-left: 15px;
   cursor: pointer;
+  transition: 0.3s;
+}
+footer .container .col:last-child .form [type="button"]:hover {
+  opacity: 0.7;
 }
 /* end footer */
 /* start media queries */
