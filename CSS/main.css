@@ -34,6 +34,7 @@ header {
 header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 header .container img {
   width: 150px;
@@ -231,7 +232,7 @@ footer .container {
   justify-content: space-between;
 }
 footer .container .col {
-  flex-basis: 40%;
+  flex-basis: 48%;
 }
 footer .container .col:first-child p,
 footer .container .col:last-child p {
@@ -256,8 +257,9 @@ footer .container .col:first-child .mail {
   color: rgb(255 255 255 /0.8);
   margin-bottom: 10px;
 }
-footer .container .col:first-child .phone span,
-footer .container .col:first-child .mail span {
+footer .container .col:first-child .phone a,
+footer .container .col:first-child .mail a {
+  color: #fff;
   margin-left: 15px;
 }
 footer .container .col:first-child .social {
@@ -318,23 +320,19 @@ footer .container .col:last-child .form [type="button"]:hover {
   }
   /* start features */
   main .features:first-child::before {
-    background-image: url(../images/bg-section-top-mobile-1.svg);
-    top: -121px;
+    top: -112px;
     height: 18%;
   }
   main .features:first-child::after {
-    background-image: url(../images/bg-section-bottom-mobile-1.svg);
-    bottom: -66px;
+    bottom: -62px;
     height: 10%;
   }
   main .features:last-child::before {
-    background-image: url(../images/bg-section-top-mobile-2.svg);
-    top: -100px;
+    top: -93px;
     height: 15%;
   }
   main .features:last-child::after {
-    background-image: url(../images/bg-section-bottom-mobile-2.svg);
-    bottom: -121px;
+    bottom: -112px;
     height: 18%;
   }
   main .features:last-child .container img {
@@ -350,8 +348,7 @@ footer .container .col:last-child .form [type="button"]:hover {
   }
   /* start footer */
   footer::before {
-    background-image: url(../images/bg-footer-top-mobile.svg);
-    top: -52px;
+    top: -49px;
     height: 8%;
   }
   footer .container {
@@ -360,7 +357,7 @@ footer .container .col:last-child .form [type="button"]:hover {
   }
   footer .container .col:first-child p,
   footer .container .col:last-child p {
-    width: 85%;
+    width: 100%;
   }
   footer .container .col:last-child {
     order: -1;
@@ -373,6 +370,34 @@ footer .container .col:last-child .form [type="button"]:hover {
     width: 100%;
   }
   footer .container .col:last-child .form [type="button"] {
-    width: 45%;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  main .features:first-child,
+  main .features:first-child,
+  main .features:last-child,
+  main .features:last-child {
+    padding: 35px 0;
+  }
+
+  main .features:first-child::before,
+  main .features:first-child::after,
+  main .features:last-child::before,
+  main .features:last-child::after {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .container .col:first-child p,
+  footer .container .col:last-child p {
+    width: 100%;
+  }
+  footer .container .col:last-child .form input:first-child {
+    flex-basis: 60%;
+  }
+  footer .container .col:last-child .form input:last-child {
+    flex-basis: 35%;
   }
 }
